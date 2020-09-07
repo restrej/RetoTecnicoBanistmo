@@ -1,0 +1,48 @@
+group 'RetoTecnicoBanistmo'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.2")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+dependencies {
+    compile 'net.serenity-bdd:serenity-core:2.0.11'
+    compile 'net.serenity-bdd:serenity-junit:2.0.11'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.15'
+    compile 'net.serenity-bdd:serenity-screenplay:2.0.11'
+    compile 'net.serenity-bdd:serenity-screenplay-webdriver:2.0.11'
+    compile 'net.serenity-bdd.maven.plugins:serenity-maven-plugin:1.2.5-rc.6'
+
+
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.9.1'
+    testCompile 'org.slf4j:slf4j-simple:1.7.25'
+}
+
+
+tasks.withType(Test) {
+    systemProperty "cucumber.options",
+            System.properties.getProperty("cucumber.options")
+    useJUnit()
+}
+
+
+gradle.startParameter.continueOnFailure = true
