@@ -29,6 +29,7 @@ dependencies {
     compile 'net.serenity-bdd:serenity-screenplay:2.0.11'
     compile 'net.serenity-bdd:serenity-screenplay-webdriver:2.0.11'
     compile 'net.serenity-bdd.maven.plugins:serenity-maven-plugin:1.2.5-rc.6'
+    compile 'org.apache.maven.plugins:maven-surefire-plugin:2.22.1'
 
 
 

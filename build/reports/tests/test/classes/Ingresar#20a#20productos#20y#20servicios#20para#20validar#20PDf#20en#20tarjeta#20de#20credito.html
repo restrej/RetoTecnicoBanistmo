@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.505s</div>
+<div class="counter">22.222s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,58 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Validar PDf en tarjeta de credito"></a>
-<h3 class="failures">Validar PDf en tarjeta de credito</h3>
-<span class="code">
-<pre>net.serenitybdd.screenplay.exceptions.ActorCannotBrowseTheWebException: The actor Juan does not have the ability to browse the web
-	at net.serenitybdd.screenplay.abilities.BrowseTheWeb.as(BrowseTheWeb.java:45)
-	at net.serenitybdd.screenplay.actions.OpenPage.performAs(OpenPage.java:21)
-	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.CGLIB$performAs$0(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6$$FastClassByCGLIB$$785f3e13.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.performAs(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:176)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:157)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:138)
-	at tasks.AbrirElBrowser.performAs(AbrirElBrowser.java:21)
-	at tasks.AbrirElBrowser$$EnhancerByCGLIB$$aa607b51.CGLIB$performAs$0(&lt;generated&gt;)
-	at tasks.AbrirElBrowser$$EnhancerByCGLIB$$aa607b51$$FastClassByCGLIB$$12076760.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
-	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
-	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at tasks.AbrirElBrowser$$EnhancerByCGLIB$$aa607b51.performAs(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:176)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:157)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:138)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:132)
-	at stepdefinitions.ValidarTarjetaCreditoStepDefinition.queJuanQuiereIngresarAProductosYServiciosDePersonasBanistmo(ValidarTarjetaCreditoStepDefinition.java:34)
-	at ✽.que Juan quiere ingresar a productos y servicios de personas banistmo(src/test/resources/features/validar_tarjeta_credito.feature:4)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -123,27 +78,33 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">Validar PDf en tarjeta de credito</td>
-<td class="failures">0.505s</td>
-<td class="failures">failed</td>
+<td class="success">Validar PDf en tarjeta de credito</td>
+<td class="success">22.222s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+<pre>sep 07, 2020 5:25:55 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 21961
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+sep 07, 2020 5:26:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED WITH ERROR: Validar PDf en tarjeta de credito
----------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Perform as: Juan
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - The actor Juan does not have the ability to browse the web
+TEST PASSED: Validar PDf en tarjeta de credito
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -155,7 +116,7 @@ TEST FAILED WITH ERROR: Validar PDf en tarjeta de credito
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 7/09/2020 12:07:02 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 7/09/2020 05:26:18 PM</p>
 </div>
 </div>
 </body>

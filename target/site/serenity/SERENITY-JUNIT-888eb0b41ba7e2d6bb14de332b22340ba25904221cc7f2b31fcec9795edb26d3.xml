@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Ingresar a productos y servicios para validar PDf en tarjeta de credito" skipped="0" tests="1" time="0.7" timestamp="2020-09-07 12:07:01"><testcase name="Validar PDf en tarjeta de credito"><error message="The actor Juan does not have the ability to browse the web" type="net.serenitybdd.screenplay.exceptions.ActorCannotBrowseTheWebException">The actor Juan does not have the ability to browse the web</error><system-err>The actor Juan does not have the ability to browse the web&#13;
-tasks.AbrirElBrowser.performAs(AbrirElBrowser.java:21)&#13;
-stepdefinitions.ValidarTarjetaCreditoStepDefinition.queJuanQuiereIngresarAProductosYServiciosDePersonasBanistmo(ValidarTarjetaCreditoStepDefinition.java:34)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Ingresar a productos y servicios para validar PDf en tarjeta de credito" skipped="0" tests="1" time="21.87" timestamp="2020-09-07 05:25:54"><testcase name="Validar PDf en tarjeta de credito"/></testsuite>
