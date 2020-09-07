@@ -2,31 +2,45 @@
 <testsuite name="runners.ValidarTarjetaCredito" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="SBMEDLAPPROJR51" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[33m1 undefined?[0m)
-3 Steps (?[33m3 undefined?[0m)
-0m0,520s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/validar_tarjeta_credito.feature:3 ?[0m# Validar PDf en tarjeta de credito
 
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m)
+0m0,959s
 
-You can implement missing steps with the snippets below:
-
-@Given("^que Juan quiere ingresar a productos y servicios de personas banistmo$")
-public void queJuanQuiereIngresarAProductosYServiciosDePersonasBanistmo() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-
-@When("^busca el producto tarjetas de credito$")
-public void buscaElProductoTarjetasDeCredito() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^validar que al descargar el pdf del contrato fue generado exitosamente$")
-public void validarQueAlDescargarElPdfDelContratoFueGeneradoExitosamente() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
+net.serenitybdd.screenplay.exceptions.ActorCannotBrowseTheWebException: The actor Juan does not have the ability to browse the web
+	at net.serenitybdd.screenplay.abilities.BrowseTheWeb.as(BrowseTheWeb.java:45)
+	at net.serenitybdd.screenplay.actions.OpenPage.performAs(OpenPage.java:21)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.CGLIB$performAs$0(<generated>)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6$$FastClassByCGLIB$$785f3e13.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:409)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at net.serenitybdd.screenplay.actions.OpenPage$$EnhancerByCGLIB$$dba123b6.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:176)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:157)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:138)
+	at tasks.AbrirElBrowser.performAs(AbrirElBrowser.java:21)
+	at tasks.AbrirElBrowser$$EnhancerByCGLIB$$aa607b51.CGLIB$performAs$0(<generated>)
+	at tasks.AbrirElBrowser$$EnhancerByCGLIB$$aa607b51$$FastClassByCGLIB$$12076760.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at tasks.AbrirElBrowser$$EnhancerByCGLIB$$aa607b51.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:176)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:157)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:138)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:132)
+	at stepdefinitions.ValidarTarjetaCreditoStepDefinition.queJuanQuiereIngresarAProductosYServiciosDePersonasBanistmo(ValidarTarjetaCreditoStepDefinition.java:34)
+	at ?.que Juan quiere ingresar a productos y servicios de personas banistmo(src/test/resources/features/validar_tarjeta_credito.feature:4)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[36m
